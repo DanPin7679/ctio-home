@@ -1,0 +1,32 @@
+.top-bar {
+  display: grid;
+  grid-area: top-bar;
+  height: 4rem;
+  align-items: center;
+  background-color: blue;
+}
+.side-bar {
+  grid-area: side-bar;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: violet;
+}
+.main {
+  grid-area: main;
+  background-color: tomato;
+}
+
+#app {
+  display: grid;
+  grid-template-areas:
+    "top-bar top-bar"
+    "side-bar main";
+  gap: 10px;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+#app > div {
+  text-align: center;
+}
